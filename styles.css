@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.preload {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preload h3 {
+    color: white;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-85%);
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.star0, .star1, .star2, .star3, .star4, .star5, .star6, .star7, .star8, .star9, .star10 {
+    height: 6px;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+}
+
+.star0 {
+    height: 4px;
+    right: 9%;
+    transform: translateY(-100%);
+    animation: stars 9s ease infinite 1.2s;
+}
+
+.star1 {
+    height: 7px;
+    right: 22%;
+    transform: translateY(-100%);
+    animation: stars 4s ease infinite;
+}
+
+.star2 {
+    height: 9.5px;
+    right: 50%;
+    transform: translateY(-100%);
+    animation: stars 3s ease infinite 3s;
+}
+
+.star3 {
+    height: 6.5px;
+    right: 78%;
+    transform: translateY(-100%);
+    animation: stars 6s ease infinite 1.5s;
+}
+
+.star4 {
+    right: 37%;
+    transform: translateY(-100%);
+    animation: stars 6s ease infinite 4s;
+}
+
+.star5 {
+    height: 4px;
+    right: 70%;
+    transform: translateY(-100%);
+    animation: stars 8s ease infinite 1s;
+}
+
+.star6 {
+    height: 10px;
+    right: 66%;
+    transform: translateY(-100%);
+    animation: stars 3s ease infinite 4.8s;
+}
+
+.star7 {
+    height: 4px;
+    right: 87%;
+    transform: translateY(-100%);
+    animation: stars 6.5s ease infinite 3.2s;
+}
+
+.star8 {
+    height: 3.5px;
+    right: 58%;
+    transform: translateY(-100%);
+    animation: stars 12.5s ease infinite 3s;
+}
+
+.star9 {
+    height: 4.5px;
+    right: 17%;
+    transform: translateY(-100%);
+    animation: stars 7.5s ease infinite 2.6s;
+}
+
+.star10 {
+    height: 4px;
+    right: 42%;
+    transform: translateY(-100%);
+    animation: stars 5.5s ease infinite 2.2s;
+}
+
+.rocket {
+    height: 400px;
+    animation: rocket 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes rocket {
+    from {
+        transform: translateX(-10px);
+    }
+    to {
+        transform: translateX(60px);
+    }
+}
+
+@keyframes stars {
+    from {
+        top: 0%
+    }
+    to {
+        top: 130%
+    }
+}
